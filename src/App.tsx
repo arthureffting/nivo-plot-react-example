@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SensorChart from "./SensorChart";
+import {temperatureData} from "./Data";
+import {createMuiTheme, MuiThemeProvider, Theme, withStyles, createStyles, WithStyles} from "@material-ui/core";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const theme = createMuiTheme({
+    palette: {
+        primary: {
+            light: "white",
+            main: "#5ad1a1",
+            dark: "rgba(0,0,0,0.3)",
+        },
+    },
+    spacing: 4,
+});
 
-export default App;
+const styles = createStyles({
+    root: {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100vh",
+        backgroundColor: theme.palette.primary.light,
+    }
+});
+
+const App: React.FunctionComponent<WithStyles<typeof styles>> = props => {
+    return <MuiThemeProvider theme={theme}>
+        <div className={props.classes.root}>
+            <SensorChart data={temperatureData}/>
+        </div>
+    </MuiThemeProvider>
+};
+
+export default withStyles(styles)(App);

@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c07bb74e-ccc5-412a-b3ab-d439d4c8f816" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SensorChart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SensorChart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/SensorChart.tsx" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +24,13 @@
   </component>
   <component name="ProjectId" id="1Yx2C1QQKJ7gxSHcp7L9MfpxATS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="C:/Program Files/nodejs/node_modules/npm/node_modules/bin-links" />
@@ -48,19 +41,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Users\arthu\WebstormProjects\nivo-plot-react-example\node_modules\typescript\lib" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -90,6 +71,7 @@
       <workItem from="1583869795859" duration="1705000" />
       <workItem from="1583871546864" duration="12246000" />
       <workItem from="1583909572540" duration="636000" />
+      <workItem from="1583912763323" duration="3901000" />
     </task>
     <servers />
   </component>
@@ -108,5 +90,27 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2467" height="394" key="GridCell.Tab.0.bottom" timestamp="1583920448431">
+      <screen x="1080" y="168" width="2560" height="1440" />
+    </state>
+    <state width="2467" height="394" key="GridCell.Tab.0.bottom/1080.168.2560.1440/0.195.1080.1725@1080.168.2560.1440" timestamp="1583920448431" />
+    <state width="2467" height="394" key="GridCell.Tab.0.center" timestamp="1583920448430">
+      <screen x="1080" y="168" width="2560" height="1440" />
+    </state>
+    <state width="2467" height="394" key="GridCell.Tab.0.center/1080.168.2560.1440/0.195.1080.1725@1080.168.2560.1440" timestamp="1583920448430" />
+    <state width="2467" height="394" key="GridCell.Tab.0.left" timestamp="1583920448430">
+      <screen x="1080" y="168" width="2560" height="1440" />
+    </state>
+    <state width="2467" height="394" key="GridCell.Tab.0.left/1080.168.2560.1440/0.195.1080.1725@1080.168.2560.1440" timestamp="1583920448430" />
+    <state width="2467" height="394" key="GridCell.Tab.0.right" timestamp="1583920448431">
+      <screen x="1080" y="168" width="2560" height="1440" />
+    </state>
+    <state width="2467" height="394" key="GridCell.Tab.0.right/1080.168.2560.1440/0.195.1080.1725@1080.168.2560.1440" timestamp="1583920448431" />
+    <state x="1990" y="637" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1583936110319">
+      <screen x="1080" y="168" width="2560" height="1440" />
+    </state>
+    <state x="1990" y="637" width="800" height="535" key="Vcs.Push.Dialog.v2/1080.168.2560.1440/0.195.1080.1725@1080.168.2560.1440" timestamp="1583936110319" />
   </component>
 </project>

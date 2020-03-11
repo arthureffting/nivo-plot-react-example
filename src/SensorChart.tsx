@@ -7,6 +7,8 @@ import {
     WithStyles,
     useTheme
 } from "@material-ui/core";
+import {Scale} from '@nivo/scales'
+import {AxisProps} from '@nivo/axes'
 import {getStdDeviation} from "./Utils";
 
 const styles = (theme: Theme) => createStyles({
@@ -124,6 +126,48 @@ const SensorChart: React.FunctionComponent<PlotProps> = props => {
 
     }, [props.data]);
 
+    const yScale = useCallback((): Scale => {
+        return {
+            type: "linear",
+            min: minY,
+            max: maxY,
+        }
+    }, [minY, maxY]);
+
+    const xScale: Scale = {
+        type: "time",
+        precision: "minute",
+        format: "%s",
+    };
+
+    let margin = {
+        top: 10,
+        right: 0,
+        bottom: 30,
+        left: 40
+    };
+
+    const axisBottom: AxisProps = {
+        format: "%H:%M",
+        tickValues: 5,
+
+    };
+
+    const axisLeft: AxisProps = {
+        legend: "Temperature",
+        legendOffset: -32,
+        legendPosition: "middle",
+        tickSize: 0,
+        tickValues: 2,
+        tickPadding: 4,
+    };
+
+    const toolTipElement = (props: PointTooltipProps) => {
+        return <div className={classes.toolTip}>
+            {props.point.data.y} °C
+        </div>
+    };
+
     return <div className={classes.chartRoot}
                 onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}>
@@ -132,47 +176,19 @@ const SensorChart: React.FunctionComponent<PlotProps> = props => {
             curve={"monotoneX"}
             data={series}
             theme={chartTheme()}
-            colors={[hover ? theme.palette.primary.main : theme.palette.primary.dark]}
+            colors={[hover ? light : dark]}
             enableGridY={hover}
             enableGridX={hover}
-            margin={{
-                top: 10,
-                right: 0,
-                bottom: 30,
-                left: 40
-            }}
-            yScale={{
-                type: "linear",
-                min: minY,
-                max: maxY,
-            }}
-            xScale={{
-                type: "time",
-                precision: "minute",
-                format: "%s",
-            }}
-            axisBottom={{
-                format: "%H:%M",
-                tickValues: 5,
-
-            }}
-            axisLeft={{
-                legend: "Temperature",
-                legendOffset: -32,
-                legendPosition: "middle",
-                tickSize: 0,
-                tickValues: 2,
-                tickPadding: 4,
-            }}
+            margin={margin}
+            yScale={yScale()}
+            xScale={xScale}
+            axisBottom={axisBottom}
+            axisLeft={axisLeft}
             lineWidth={1}
             pointSize={0}
             useMesh={true}
             crosshairType="cross"
-            tooltip={(props: PointTooltipProps) => {
-                return <div className={classes.toolTip}>
-                    {props.point.data.y} °C
-                </div>
-            }}
+            tooltip={toolTipElement}
         />
     </div>
 };
